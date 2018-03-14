@@ -1,0 +1,2 @@
+# Blog
+Kişisel Blog Sayfası
