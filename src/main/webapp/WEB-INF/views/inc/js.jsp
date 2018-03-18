@@ -9,3 +9,7 @@
 
     <!-- Custom scripts for this template -->
     <script src='<s:url value="/resources/js/clean-blog.min.js"></s:url>'></script>
+    
+    <!-- Contact Form JavaScript -->
+    <script src='<s:url value="/resources/js/jqBootstrapValidation.js"></s:url>'></script>
+    <script src='<s:url value="/resources/js/contact_me.js"></s:url>'></script>

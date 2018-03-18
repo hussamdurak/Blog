@@ -43,15 +43,25 @@
 
 	<!-- Page Header -->
 	<header class="masthead"
-		style="background-image: url('resources/img/home-bg.jpg')">
+		style="background-image: url('resources/img/post-bg.jpg')">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
-				<div class="site-heading">
-					<h1>Java Blog</h1>
-					<span class="subheading">Everything About Java</span>
-				</div>
+
+				<c:if test="${ not empty ls}">
+					<c:forEach var="item" items="${ ls }">
+
+						<div class="post-heading">
+							<h1>${ item.getYbaslik() }</h1>
+							<h2 class="subheading">${ item.getYozet() }</h2>
+							<span class="meta">Posted by <a href="#">Start
+									Bootstrap</a>${ item.getYtarih() }
+							</span>
+						</div>
+					</c:forEach>
+				</c:if>
+
 			</div>
 		</div>
 	</div>
@@ -62,24 +72,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
-				
+
 				<c:if test="${ not empty ls}">
-				<c:forEach var="item" items="${ ls }">
-							
-				<div class="post-preview">
-					<a href='<s:url value="/post/${ item.getYid() }"></s:url>'>
-						<h2 class="post-title">${ item.getYbaslik() }</h2>
-						<h3 class="post-subtitle">${ item.getYozet() }</h3>
-					</a>
-					<p class="post-meta">
-						Posted by <a href='<s:url value="/about"></s:url>'> Hüssam Durak </a>${ item.getYtarih() }
-					</p>
-				</div>
-				
-				
-				</c:forEach>
+					<c:forEach var="item" items="${ ls }">
+
+						<h2>${ item.getYbaslik() }</h2>
+						<br>
+						<p>${ item.getYicerik() }</p>
+
+						<hr>
+
+					</c:forEach>
 				</c:if>
-				
+				<!-- Pager -->
+
 			</div>
 		</div>
 	</div>

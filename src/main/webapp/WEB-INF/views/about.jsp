@@ -43,14 +43,14 @@
 
 	<!-- Page Header -->
 	<header class="masthead"
-		style="background-image: url('resources/img/home-bg.jpg')">
+		style="background-image: url('resources/img/about-bg.jpg')">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
 				<div class="site-heading">
-					<h1>Java Blog</h1>
-					<span class="subheading">Everything About Java</span>
+					<h1>Hüssam Durak</h1>
+					<span class="subheading">Java Developer</span>
 				</div>
 			</div>
 		</div>
@@ -59,30 +59,15 @@
 
 
 	<!-- Main Content -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-md-10 mx-auto">
-				
-				<c:if test="${ not empty ls}">
-				<c:forEach var="item" items="${ ls }">
-							
-				<div class="post-preview">
-					<a href='<s:url value="/post/${ item.getYid() }"></s:url>'>
-						<h2 class="post-title">${ item.getYbaslik() }</h2>
-						<h3 class="post-subtitle">${ item.getYozet() }</h3>
-					</a>
-					<p class="post-meta">
-						Posted by <a href='<s:url value="/about"></s:url>'> Hüssam Durak </a>${ item.getYtarih() }
-					</p>
-				</div>
-				
-				
-				</c:forEach>
-				</c:if>
-				
-			</div>
-		</div>
-	</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+        </div>
+      </div>
+    </div>
 
 	<c:import url="/inc/footer"></c:import>
 
