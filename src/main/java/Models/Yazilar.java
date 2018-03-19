@@ -24,6 +24,8 @@ public class Yazilar implements Serializable {
 	private String yicerik;
 
 	private String yozet;
+	
+	private String yyazar;
 
 	@Temporal(TemporalType.DATE)
 	private Date ytarih;
@@ -55,6 +57,14 @@ public class Yazilar implements Serializable {
 		this.yicerik = yicerik;
 	}
 
+	public String getYyazar() {
+		return this.yyazar;
+	}
+
+	public void setYyazar(String yyazar) {
+		this.yyazar = yyazar;
+	}
+	
 	public String getYozet() {
 		return this.yozet;
 	}

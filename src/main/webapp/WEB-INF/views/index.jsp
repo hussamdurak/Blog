@@ -72,7 +72,7 @@
 						<h3 class="post-subtitle">${ item.getYozet() }</h3>
 					</a>
 					<p class="post-meta">
-						Posted by <a href='<s:url value="/about"></s:url>'> Hüssam Durak </a>${ item.getYtarih() }
+						Posted by <a href='<s:url value="/about"></s:url>'> ${ item.getYyazar() } </a>${ item.getYtarih() }
 					</p>
 				</div>
 				
